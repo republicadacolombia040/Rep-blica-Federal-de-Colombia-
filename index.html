@@ -1,75 +1,90 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Citizen Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }.header {
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Citizen Portfolio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+/* HEADER */
+.header {
   width: 100%;
   background: #0033a0;
   color: white;
   text-align: center;
-  padding: 20px 10px;
+  padding: 15px 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .header img {
   width: 60px;
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 5px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 22px;
 }
 
 .header h1 {
-  margin: 0;
-  font-size: 28px;
-  letter-spacing: 1px;
+  margin: 5px 0 0;
+  font-size: 26px;
 }
 
+/* CONTAINER */
 .container {
-  margin-top: 40px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
   background: white;
-  padding: 25px;
-  border-radius: 20px;
+  padding: 15px;
+  border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  max-width: 500px;
-  width: 90%;
   text-align: center;
 }
 
-.container h2 {
-  margin-bottom: 20px;
-  color: #0033a0;
-}
-
+/* IMAGE FULL WIDTH */
 .id-image {
   width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
+/* FOOTER */
 .footer {
-  margin-top: 30px;
+  margin-top: 15px;
   font-size: 14px;
   color: #555;
 }
-
-  </style>
+</style>
 </head>
-<body> <div class="header" style="text-align:center;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Coat_of_arms_of_Colombia.svg" alt="Colombia Coat of Arms" width="80">
-    <h2>Republic of Colombia</h2>
-</div>
-    <h1>Citizen Portfolio</h1>
-  </div> <div class="container">
-    <h2>Government of Colombia</h2><!-- Replace 'your-image.png' with your uploaded image path -->
-<img src="image.png" 
 
-<div class="footer">
-  Verified Identity Record • Migr
+<body>
+
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Coat_of_arms_of_Colombia.svg" alt="Colombia Coat of Arms">
+  <h2>Republic of Colombia</h2>
+  <h1>Citizen Portfolio</h1>
+</div>
+
+<div class="container">
+  <h2>Government of Colombia</h2>
+
+  <!-- Your image -->
+  <img src="image.png" alt="ID Image" class="id-image">
+
+  <div class="footer">
+    Verified Identity Record • Migration Office
+  </div>
+</div>
+
+</body>
+</html>
