@@ -5,84 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Citizen Portfolio</title>
 
+<!-- Official-style font -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: 'Roboto Slab', serif;
+  background: #e9eef5;
 }
 
 /* HEADER */
 .header {
-  width: 100%;
-  background: #0033a0;
+  background: #002b5c;
   color: white;
   text-align: center;
-  padding: 15px 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 20px 10px;
+  border-bottom: 5px solid #caa400;
 }
 
-.header img {
-  width: 60px;
-  display: block;
-  margin: 0 auto 5px;
+/* LOGO */
+.header a img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 8px;
+  transition: 0.3s ease;
+}
+
+.header a img:hover {
+  transform: scale(1.05);
 }
 
 .header h2 {
   margin: 0;
-  font-size: 22px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.9;
 }
 
 .header h1 {
-  margin: 5px 0 0;
-  font-size: 26px;
+  margin: 8px 0 0;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
-/* CONTAINER */
+/* MAIN CARD */
 .container {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
+  max-width: 650px;
+  margin: 25px auto;
   background: white;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   text-align: center;
+  border-top: 4px solid #002b5c;
 }
 
-/* IMAGE FULL WIDTH */
+.container h2 {
+  font-weight: 800;
+  color: #002b5c;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ID IMAGE */
 .id-image {
   width: 100%;
-  height: auto;
   border-radius: 10px;
+  border: 2px solid #ddd;
   margin-top: 10px;
 }
 
 /* FOOTER */
 .footer {
   margin-top: 15px;
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  font-style: italic;
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Coat_of_arms_of_Colombia.svg" alt="Colombia Coat of Arms">
+
+  <!-- Local logo + Wikipedia link -->
+  <a href="https://en.wikipedia.org/wiki/Coat_of_arms_of_Colombia" target="_blank">
+    <img src="logo.png" alt="Coat of Arms">
+  </a>
+
   <h2>Republic of Colombia</h2>
-  <h1>Citizen Portfolio</h1>
+  <h1>CITIZEN PORTFOLIO</h1>
 </div>
 
+<!-- MAIN CONTENT -->
 <div class="container">
-  <h2>Government of Colombia</h2>
+  <h2>Government Identity Record</h2>
 
-  <!-- Your image -->
-  <img src="image.png" alt="ID Image" class="id-image">
+  <!-- ID IMAGE -->
+  <img src="image.png" alt="Citizen ID" class="id-image">
 
   <div class="footer">
-    Verified Identity Record • Migration Office
+    Official Verification System • National Registry Authority
   </div>
 </div>
 
